@@ -1,10 +1,6 @@
 require("./config/config")
 const express = require('express')
 const app = express()
-//CONFIG
-
-
-
 
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
