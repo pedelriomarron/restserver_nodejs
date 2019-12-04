@@ -9,6 +9,10 @@ const app = express()
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
+
+app.get('/', (req, res) => {
+    res.json("get Usuario")
+})
 app.get('/usuario', (req, res) => {
     res.json("get Usuario")
 })
